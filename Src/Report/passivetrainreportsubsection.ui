@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PassiveTrainReportSubsection</class>
+ <widget class="QWidget" name="PassiveTrainReportSubsection">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="name_label">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>330</y>
+     <width>84</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>杨万里</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>504</y>
+     <width>134</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 134px;
+height: 28px;
+font-size: 28px;
+font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+font-weight: 400;
+color: #666666;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>联系电话：</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background: #0D9DDB;
+border-radius: 8px 8px 0px 0px;</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>25</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 180px;
+height: 30px;
+font-size: 30px;
+font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+font-weight: 500;
+color: #FFFFFF;
+line-height: 45px;</string>
+    </property>
+    <property name="text">
+     <string>被动训练报告</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>446</y>
+     <width>134</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 134px;
+height: 28px;
+font-size: 28px;
+font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+font-weight: 400;
+color: #666666;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>年龄：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>713</x>
+     <y>335</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>训练时间</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="noSave_btn">
+   <property name="geometry">
+    <rect>
+     <x>882</x>
+     <y>821</y>
+     <width>140</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 108px;
+height: 36px;
+font-size: 36px;
+font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+font-weight: 400;
+color: #FFFFFF;
+line-height: 54px;
+
+background: #F78759;
+border-radius: 8px;</string>
+   </property>
+   <property name="text">
+    <string>不保存</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>678</y>
+     <width>161</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 134px;
+height: 28px;
+font-size: 28px;
+font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+font-weight: 400;
+color: #666666;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>训练总时间：</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>111</y>
+     <width>1440</width>
+     <height>190</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+    </font>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="score_label">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>24</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 112px;
+height: 67px;
+font-size: 67px;
+font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+font-weight: 400;
+color: #333333;
+line-height: 101px;</string>
+    </property>
+    <property name="text">
+     <string>123</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>32</x>
+      <y>30</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../images.qrc">:/images/photo_woman.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>37</y>
+      <width>42</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../images/grade.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grade_label">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>32</y>
+      <width>28</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 28px;
+height: 49px;
+font-size: 49px;
+font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+font-weight: 400;
+color: #333333;
+line-height: 74px;</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>344</x>
+      <y>120</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>本次得分</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>101</y>
+      <width>190</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../images/progressbar.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>674</x>
+      <y>36</y>
+      <width>104</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 104px;
+height: 26px;
+font-size: 26px;
+font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+font-weight: 400;
+color: #666666;
+line-height: 39px;</string>
+    </property>
+    <property name="text">
+     <string>训练模式</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>637</x>
+      <y>30</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../images/trainmode.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>965</x>
+      <y>36</y>
+      <width>104</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 104px;
+height: 26px;
+font-size: 26px;
+font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+font-weight: 400;
+color: #666666;
+line-height: 39px;</string>
+    </property>
+    <property name="text">
+     <string>活动范围</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>928</x>
+      <y>30</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../images/trainscope.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>1256</x>
+      <y>36</y>
+      <width>104</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 104px;
+height: 26px;
+font-size: 26px;
+font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+font-weight: 400;
+color: #666666;
+line-height: 39px;</string>
+    </property>
+    <property name="text">
+     <string>训练选项</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>1219</x>
+      <y>30</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../images/trainingoptions.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="trainMode_label">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>104</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑 Light</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>被动训练</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="trainScope_label">
+    <property name="geometry">
+     <rect>
+      <x>952</x>
+      <y>104</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑 Light</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>0°-120°</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="trainOption_label">
+    <property name="geometry">
+     <rect>
+      <x>1232</x>
+      <y>104</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑 Light</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>内翻外翻</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>562</y>
+     <width>134</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 134px;
+height: 28px;
+font-size: 28px;
+font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+font-weight: 400;
+color: #666666;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>训练时间：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>671</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>备注</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save_btn">
+   <property name="geometry">
+    <rect>
+     <x>1072</x>
+     <y>821</y>
+     <width>140</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background: #0D9DDB;
+border-radius: 8px;
+width: 72px;
+height: 36px;
+font-size: 36px;
+font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+font-weight: 400;
+color: #FFFFFF;
+line-height: 54px;</string>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>620</y>
+     <width>134</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 134px;
+height: 28px;
+font-size: 28px;
+font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+font-weight: 400;
+color: #666666;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>周期次数：</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>713</x>
+     <y>716</y>
+     <width>685</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 685px;
+height: 70px;
+background: #E4F4FC;
+border-radius: 12px;
+border: 2px solid #0D9DDB;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="trainTime_label">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>562</y>
+     <width>231</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>2021.08.15-15:52</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="age_label">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>446</y>
+     <width>32</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>30</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="phoneNumber_label">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>504</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>18511011011</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cyclesNumber_label">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>620</y>
+     <width>83</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>14.8米</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>330</y>
+     <width>134</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 134px;
+height: 28px;
+font-size: 28px;
+font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+font-weight: 400;
+color: #666666;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>姓名：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="print_btn">
+   <property name="geometry">
+    <rect>
+     <x>1262</x>
+     <y>821</y>
+     <width>140</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background: #0D9DDB;
+border-radius: 8px;
+width: 72px;
+height: 36px;
+font-size: 36px;
+font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+font-weight: 400;
+color: #FFFFFF;
+line-height: 54px;</string>
+   </property>
+   <property name="text">
+    <string>打印</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>388</y>
+     <width>134</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 134px;
+height: 28px;
+font-size: 28px;
+font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+font-weight: 400;
+color: #666666;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>性别：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sex_label">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>388</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>男</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="trainSumTime_label">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>678</y>
+     <width>134</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>303分20秒</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

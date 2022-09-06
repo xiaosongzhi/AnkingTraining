@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <tcpAddress IP = "192.168.1.20"  port = "8000"></tcpAddress>
+	<udpServerAddress IP = "192.168.1.10"  port = "10000"></udpServerAddress>
+	<udpClientAddress IP = "192.168.1.100"  port = "15000"></udpClientAddress>
+	<udpGameAddress IP = "127.0.0.1"  port = "11000"></udpGameAddress>
+	<serialPort portName = "COM3"  baud = "115200" dataBits = "8"  parity = "0" stopBit = "0" flowControl = "0"></serialPort>
+	<dataBase IP = "192.168.1.20"  port = "9000"  userName = "root" password = "root"></dataBase>
+	<videoTips videoPath = "./video/" videoNum = "9">
+		<videoContent videoId = "1"  videoName = "综合评估.mp4" ></videoContent>
+		<videoContent videoId = "2"  videoName = "跖屈背屈评估.mp4" ></videoContent>
+		<videoContent videoId = "3"  videoName = "内收外展评估.mp4" ></videoContent>
+		<videoContent videoId = "4"  videoName = "内翻外翻评估.mp4" ></videoContent>
+		<videoContent videoId = "5"  videoName = "斜跖屈背屈评估.mp4" ></videoContent>
+		<videoContent videoId = "6"  videoName = "被动训练提示.mp4" ></videoContent>
+		<videoContent videoId = "7"  videoName = "主动训练提示.mp4" ></videoContent>
+		<videoContent videoId = "8"  videoName = "初始化提示.mp4" ></videoContent>
+		<videoContent videoId = "9"  videoName = "陀螺仪校准提示.mp4" ></videoContent>
+	</videoTips>
+	<communicateType type = "0"></communicateType>
+	<programMode mode = "1"></programMode>
+</config>
+
+<!-- type 0-serialport 1-udp 2-tcp 3-can -->
+<!--  udpSever-上位机  udpClient-下位机 -->  
+<!-- mode 0-debug 1-release -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<gameType>
+<game ID = "1" name = "小黄鸭" path = "./gameExecutable/HGJ001_YellowDuck/HGJ001_YellowDuck.exe" iconPath = "yellowDuck.png" suitType = "2"></game>
+<game ID = "2" name = "星球分段" path = "./gameExecutable/HGJ002_Planet/HGJ002_Planet.exe" iconPath = "planet.png" suitType = "6"></game>
+<game ID = "3" name = "星球圆周" path = "./gameExecutable/HGJ002_Planet/HGJ002_Planet2.exe" iconPath = "planet2.png" suitType = "5"></game>
+<game ID = "4" name = "冲浪企鹅" path = "./gameExecutable/HGJ004_Penguin/Penguin.exe" iconPath = "Penguin.png" suitType = "2"></game>
+<game ID = "5" name = "松鼠跑酷" path = "./gameExecutable/HGJ005_SquirrelParkour/SquirrelParkour.exe" iconPath = "SquirrelParkour.png" suitType = "2"></game>
+<!--<game ID = "4" name = "贪吃怪" path = "./gameExecutable/EatFood/EatFood.exe" iconPath = "EatFood.png" suitType = "0,1,2"></game>
+<game ID = "5" name = "地下钻探" path = "./gameExecutable/SubserfaceBoring/SubserfaceBoring.exe" iconPath = "SubserfaceBoring.png" suitType = "0,1,2"></game>-->
+</gameType>
+
+<!-- ID-游戏ID  name-游戏的名称  path-游戏完全路径  iconPath-图标路径  suitType-适合类型，由于一种游戏可以适应不同的训练类型，故可以写成1,2或者其它，中间用","分割
+ 5-被动圆周 6-被动分段 2-主动 3-主动圆周-->

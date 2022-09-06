@@ -1,0 +1,19 @@
+QHeaderView::section:first
+
+{
+
+width: 1592px;
+height: 46px;
+background: #F1F9FD;
+
+width: 96px;
+height: 24px;
+font-size: 24px;
+font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+font-weight: 400;
+color: #676767;
+line-height: 36px;
+
+
+
+}
